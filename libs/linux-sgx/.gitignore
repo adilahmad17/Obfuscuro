@@ -1,0 +1,38 @@
+#object file
+*.o
+
+#library
+*.a
+
+#share object
+*.so
+*.so.*
+
+#generated proxy
+*_u.c
+*_u.h
+*_t.c
+*_t.h
+
+*.Plo
+*.lo
+*.la
+*.lai
+*.Po
+
+#output files
+/sgxsdk/
+/build/
+/linux/installer/bin/*.bin
+/linux/installer/bin/sgxsdk/
+/linux/installer/common/psw/output/
+/linux/installer/common/sdk/output/
+/sdk/edger8r/linux/_build/
+
+# extra files
+/external/epid-sdk-3.0.0/config.log
+/external/rdrand/src/test
+/psw/ae/cse_provision_tool/cse_provision_tool
+/sdk/cpprt/linux/libunwind/libtool
+/sdk/gperftools/gperftools-2.5/libtool
+/sdk/simulation/SEConfigureCPUSVN/linux/sgx_config_cpusvn

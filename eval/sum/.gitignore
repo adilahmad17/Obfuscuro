@@ -1,0 +1,8 @@
+/app
+*.o
+*.so
+.project
+.cproject
+*_u.*
+*_t.*
+/Enclave/.reflect.real.*

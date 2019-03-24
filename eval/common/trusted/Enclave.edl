@@ -1,0 +1,26 @@
+/* Enclave.edl - Top EDL file. */
+
+enclave {
+    
+    include "user_types.h" /* buffer_t */
+
+    untrusted {
+        void ocall_print_string([in, string] const char *str);
+        size_t ocall_getsize([in, out, size=100] char* filename);
+        int ocall_open([in, out, size=100] char* filename);
+        size_t ocall_read ([in, out, size=size_read] void * ptr, size_t size_read, int fd);
+        void ocall_start_timer(void);
+        void ocall_end_timer(void);
+
+        /* Termination-specific OCALLs */
+        void ocall_exit([in, out, size=size_out] void* ptr, size_t size_out);
+
+        /* Scratchpad-specific OCALLs */
+        unsigned long ocall_get_codepad_addr(void);
+        unsigned long ocall_get_datapad_addr(void);
+    };
+
+    trusted {
+        public void entry(void);
+    };
+};

@@ -1,0 +1,26 @@
+
+* Back-end instrumentation
+- llvm/llvm-4.0.0.src/lib/Target/X86/X86Rerand.cpp
+
+* Front-end instrumentation
+- llvm/llvm-4.0.0.src/lib/Transforms/Instrumentation/Rerand.cpp
+
+* Runtime functions
+- llvm/llvm-4.0.0.src/projects/compiler-rt/lib/rerand/*
+
+* Testcases
+- llvm/llvm-4.0.0.src/projects/compiler-rt/test/rerand/TestCases/*
+
+* Build or Rebuild
+Run `build-llvm.sh` or `rebuild-llvm.sh`
+
+* Test
+
+Run `test-llvm.sh`
+
+It should show below:
+
+[100%] Running the Rerand tests
+Testing Time: 0.44s
+  Expected Passes    : 5
+[100%] Built target check-rerand

@@ -1,0 +1,4 @@
+*.o
+trusted/.reflect.real.*
+*_u.*
+*_t.*

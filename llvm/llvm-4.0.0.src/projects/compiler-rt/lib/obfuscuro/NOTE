@@ -1,0 +1,5 @@
+
+Relocation:
+ http://www.skyfree.org/linux/references/ELF_Format.pdf
+ https://software.intel.com/sites/default/files/article/402129/mpx-linux64-abi.pdf
+ http://web.mit.edu/freebsd/head/libexec/rtld-elf/amd64/reloc.c

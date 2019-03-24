@@ -1,0 +1,23 @@
+{
+    global:
+        sgx_create_enclave;
+        sgx_destroy_enclave;
+        sgx_ecall;
+        sgx_thread_wait_untrusted_event_ocall;
+        sgx_thread_set_untrusted_event_ocall;
+        sgx_thread_setwait_untrusted_events_ocall;
+        sgx_thread_set_multiple_untrusted_events_ocall;
+        sgx_oc_cpuidex;
+      	sgx_contact_driver;
+      	sgx_swap_page;
+      	sgx_swap_random_pages;
+      	sgx_get_pagetable;
+      	get_pfault_counter;
+      	reset_pfault_counter;
+        sgx_vaddr_translate;
+
+        m_codepad_addr;
+        m_datapad_addr;
+    local:
+        *;
+};
